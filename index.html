@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Survey Form</h1>
+<p id="description">Let us know how we can improve the world</p>
+
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Enter your name:</label>
+        <input required type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label id="email-label" for="email">Enter your email:</label>
+        <input required type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label id="number-label" for="number">Enter your age:</label>
+        <input required type="number" id="number" name="number" placeholder="Enter your age" min="12" max="110">
+    </fieldset>
+
+    <fieldset>
+        <p>Which level of skills are you?</p>
+        <label for="dropdown">
+            <select id="dropdown" name="skill-level">
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+            </select>
+        </label>
+
+        <p>How did you hear about us?</p>
+        <label for="forum">
+            <input type="radio" id="forum" name="source" value="forum" required> Forum
+        </label>
+        <label for="yt">
+            <input type="radio" id="yt" name="source" value="youtube"> YouTube
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <p>What is your favorite part of my website?</p>
+        <label for="color"><input type="checkbox" id="color" name="fav-part" value="color"> Color</label>
+        <label for="url"><input type="checkbox" id="url" name="fav-part" value="url"> URL</label>
+
+        <p>Provide a bio:</p>
+        <label for="bio"></label>
+        <textarea name="bio" id="bio" cols="30" rows="3"></textarea>
+    </fieldset>
+
+    <input type="submit" id="submit" value="Submit">
+</form>
+
+</body>
+</html>
